@@ -11,6 +11,8 @@ for i in range(1,n+1):
                 indi=0
                 if a==j or b==j:
                     indi=1
+                else:
+                    pass
                 if indi==1:
                     print(0,end=' ')
                     break
