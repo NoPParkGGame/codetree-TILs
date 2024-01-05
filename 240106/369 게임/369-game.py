@@ -13,7 +13,7 @@ for i in range(1,n+1):
                     break
                 else:
                     print(i,end=' ')
-                    break
+                
         elif 99<i<370: #ex) 246
             a=i//100 #100의자리 숫자 2
             b= (i-a*100)//10 #10자리 숫자, (246-200)=> 46 //10 ->4
@@ -24,6 +24,6 @@ for i in range(1,n+1):
                     break
                 else:
                     print(i,end=' ')
-                    break
+               
         else:
             print(i,end=' ')
