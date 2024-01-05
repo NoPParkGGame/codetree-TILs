@@ -15,10 +15,10 @@ for i in range(1,n+1):
                     pass
             if indi==1:
                 print(0,end=' ')
-                break
+
             else:
                 print(i,end=' ')
-                break
+
                 
         else:
             print(i,end=' ')
