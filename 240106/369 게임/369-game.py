@@ -8,22 +8,14 @@ for i in range(1,n+1):
             a=i//10 #10의자리 숫자 8
             b=i%10 # 1의자리 숫자 6
             for j in indicator:
+                indi=0
                 if a==j or b==j:
-                    print(0,end=' ')
-                    break
+                    indi=1
+                if indi==1:
+                    print(0)
                 else:
-                    print(i,end=' ')
+                    print(i)
+                    
                 
-        elif 99<i<370: #ex) 246
-            a=i//100 #100의자리 숫자 2
-            b= (i-a*100)//10 #10자리 숫자, (246-200)=> 46 //10 ->4
-            c= (i-a*100)%10 # 1의자리 숫자 6
-            for j in indicator:
-                if a==j or b==j or c==j:
-                    print(0,end=' ')
-                    break
-                else:
-                    print(i,end=' ')
-               
         else:
             print(i,end=' ')
