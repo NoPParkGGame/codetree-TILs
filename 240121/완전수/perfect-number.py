@@ -11,4 +11,4 @@ for i in range(start, end+1):
 
     if sum_val==i:
         cnt+=1
-        print(cnt)
+print(cnt)
