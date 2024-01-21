@@ -7,4 +7,4 @@ for elem in arr:
         cnt_val+=1
     else:
         break
-print(sum_val,f'{sum_val/cnt_val:.1}')
+print(sum_val,f'{sum_val/cnt_val:.10}')
