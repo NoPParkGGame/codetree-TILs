@@ -18,3 +18,4 @@ for _ in range(q):
         b = q_arr[2]
         for i in range(a-1,b):
             print(n_arr[i], end=' ')
+        print()
