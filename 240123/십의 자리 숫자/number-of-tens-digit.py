@@ -1,6 +1,6 @@
 arr=list(map(int,input().split()))
 
-teen_arr=[elem//10 for elem in arr]
+teen_arr=[elem//10 for elem in arr if elem!=0]
 
 count_arr=[i for i in range(1,10)]
 
