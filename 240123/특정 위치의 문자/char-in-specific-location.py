@@ -3,3 +3,5 @@ word=input()
 for i,elem in enumerate(arr):
     if elem==word:
         print(i)
+    else:
+        print('None')
