@@ -16,5 +16,5 @@ for _ in range(q):
     else:
         a = q_arr[1]
         b = q_arr[2]
-        for elem in n_arr[a-1:b]:
-            print(elem, end=' ')
+        for i in range(a-1,b):
+            print(n_arr[i], end=' ')
