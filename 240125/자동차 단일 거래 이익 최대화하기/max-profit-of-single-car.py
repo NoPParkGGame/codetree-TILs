@@ -14,10 +14,25 @@ for elem in arr[arr.index(min_val):]:
     if max_val<elem:
         max_val=elem
 
-if max_val==-sys.maxsize:
+max_val_2=-sys.maxsize
+min_val_2=sys.maxsize
+
+for elem in arr:
+    if max_val_2<elem:
+        max_val_2=elem
+
+for elem in arr[:arr.index(max_val_2)]:
+    if min_val_2>elem:
+        min_val_2=elem
+
+
+if max_val==-sys.maxsize or min_val_2==sys.maxsize:
     print(0)
 else:
-    print(max_val-min_val)
+    if max_val-min_val>max_val_2-min_val_2:
+        print(max_val-min_val)
+    else:
+        print(max_val_2-min_val_2)
 
 
 '''
@@ -32,5 +47,8 @@ else:
 이것들 보단 순서를 바꾸어서
 최솟값을 기준으로 오른쪽에 있는 최댓값을 구하는 것이 더 낫겠다.
 
+9 4 18 10 2 3 6
+*다음과 같은 경우에는 풀리지 않는다. 흠
+그러면 위 두 개를 합쳐서 비교를 해볼까?
 
 '''
