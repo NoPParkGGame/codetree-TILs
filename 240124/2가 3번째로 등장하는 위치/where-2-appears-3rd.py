@@ -4,9 +4,9 @@ arr=list(map(int,input().split()))
 
 obj=2
 cnt=0
-for elem in arr:
-    if elem==obj:
+for i in range(n):
+    if arr[i]==obj:
         cnt+=1
         if cnt==3:
-            print(arr[elem]+1)
+            print(arr[i]+1)
             break
