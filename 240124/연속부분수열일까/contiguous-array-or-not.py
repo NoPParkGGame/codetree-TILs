@@ -7,8 +7,7 @@ Y_or_N=0
 for i in range(len(A_arr)):
     if A_arr[i:len(B_arr)]==B_arr:
         Y_or_N=1
-    else:
-        pass
+
 if Y_or_N==1:
     print('Yes')
 else:
