@@ -5,7 +5,7 @@ A_arr=list(map(int,input().split()))
 B_arr=list(map(int,input().split()))
 Y_or_N=0
 for i in range(len(A_arr)):
-    if A_arr[i:len(B_arr)]==B_arr:
+    if A_arr[i:len(B_arr)+i]==B_arr:
         Y_or_N=1
 
 if Y_or_N==1:
