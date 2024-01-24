@@ -10,6 +10,6 @@ for elem in arr:
     else:
         if min_val>elem:
             min_val=elem
-        elif max_val<elem:
+        if max_val<elem:
             max_val=elem
 print(max_val,min_val)
