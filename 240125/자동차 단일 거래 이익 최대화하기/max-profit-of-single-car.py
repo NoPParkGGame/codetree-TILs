@@ -26,7 +26,7 @@ for elem in arr[:arr.index(max_val_2)]:
         min_val_2=elem
 
 
-if max_val==-sys.maxsize or min_val_2==sys.maxsize:
+if max_val==-sys.maxsize and min_val_2==sys.maxsize:
     print(0)
 else:
     if max_val-min_val>max_val_2-min_val_2:
