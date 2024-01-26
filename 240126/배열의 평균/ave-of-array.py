@@ -15,7 +15,7 @@ for j in range(4):
     print(sum_val/2,end=' ')
     total_sum_val+=sum_val/2
     total_count+=1
-    
+
 print()
 
-print(total_sum_val/total_count)
+print(f'{total_sum_val/total_count:.1f}')
