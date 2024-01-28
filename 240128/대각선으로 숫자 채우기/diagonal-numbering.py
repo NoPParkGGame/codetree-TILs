@@ -8,7 +8,7 @@ arr=[
 cnt=0
 num=1
 
-while cnt<=m*n:
+while num<=m*n:
     for i in range(cnt+1):
         for j in range(cnt+1):
             if i+j==cnt and i<n and j<m:
