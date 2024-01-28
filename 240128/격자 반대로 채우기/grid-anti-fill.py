@@ -6,7 +6,7 @@ arr=[
 ]
 num=1
 for j in range(n-1,-1,-1):
-    if j%2==0:
+    if (j%2==0 and n%2==0) or (j%2!=0 and n%2!=0) :
         for i in range(n):
             arr[i][j]=num
             num+=1
@@ -22,6 +22,7 @@ for row in arr:
 
 
 '''
+n이 4일 때
 3   3
 2   3
 1   3
@@ -41,6 +42,13 @@ for row in arr:
 1   0
 2   0
 3   0
+
+4   4
+3   4
+2   4
+1   4
+0   4
+
 
 
 
