@@ -2,5 +2,7 @@ a,b= tuple(input().split())
 
 if len(a)>len(b):
     print(a, len(a))
-else:
+elif len(a)<len(b)
     print(b, len(b))
+else:
+    print('same')
