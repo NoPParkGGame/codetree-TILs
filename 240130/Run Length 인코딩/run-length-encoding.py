@@ -10,16 +10,17 @@ for i in range(len(word)):
             abc_list.append(word[i])
             abc_list.append(' ')
     else:
-        abc_list.append(word[-1])
-
-print(abc_list)
-
-new_abc_list=[]
-
-for elem in abc_list:
-    print(elem, end='')
+        abc_list.append(word[-1]) # 문자가 달라지는 시점을 기준으로 공백으로 구획을 나눈 리스트 생성
 
 
+new_word=''.join(abc_list)  #리스트를 다시 문자열로 합친 후
+
+final_list=new_word.split() # 공백을 기준으로 split 해 같은 문자들 끼리 모아줌
+
+print(len(final_list)*2)
+
+for elem in final_list:
+    print(f'{elem[0]}{elem.count(elem[0])}',end='')
 
 '''
 
