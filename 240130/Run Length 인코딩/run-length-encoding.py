@@ -17,11 +17,15 @@ new_word=''.join(abc_list)  #리스트를 다시 문자열로 합친 후
 
 final_list=new_word.split() # 공백을 기준으로 split 해 같은 문자들 끼리 모아줌
 
-print(len(final_list)*2)
+cnt=0
+for elem in final_list:
+    cnt+=2
+    if len(elem)>9:
+        cnt+=1
+print(cnt)
 
 for elem in final_list:
     print(f'{elem[0]}{elem.count(elem[0])}',end='')
-
 '''
 
 문제점: 같은 숫자도 연속해서 나온게 아니면 따로 적어줘야함
