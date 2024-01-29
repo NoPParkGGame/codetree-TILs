@@ -10,4 +10,4 @@ for elem in arr:
         print(elem)
         num+=1
 if num==0:
-    print)'None'
+    print('None')
