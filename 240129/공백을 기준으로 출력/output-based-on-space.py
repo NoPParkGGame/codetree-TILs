@@ -1,4 +1,11 @@
-a,b=input().split()
-c,d,e=input().split()
+a=input()
+b=input()
 
-print(a+b+c+d+e)
+arr=[]
+
+arr.append(a.split())
+arr.append(b.split())
+
+for word in arr:
+    for elem in word:
+        print(elem, end='')
