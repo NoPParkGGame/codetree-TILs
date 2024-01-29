@@ -8,5 +8,5 @@ for elem in word[::-1]:
     else:
         print(elem,end='')
         cnt+=1
-        if cnt>n:
+        if cnt==n:
             break
