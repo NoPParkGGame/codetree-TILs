@@ -22,6 +22,8 @@ for elem in final_list:
     cnt+=2
     if len(elem)>9:
         cnt+=1
+    elif len(elem)>99:
+        cnt+=1
 print(cnt)
 
 for elem in final_list:
