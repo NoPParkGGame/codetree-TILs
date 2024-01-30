@@ -1,4 +1,8 @@
 string=input()
 
-for i in range(len(string)-1,-1,-2):
-    print(string[i],end='')
+even_string=''
+
+for elem in string[1::2]:
+    even_string+=elem
+
+print(even_string[::-1])
