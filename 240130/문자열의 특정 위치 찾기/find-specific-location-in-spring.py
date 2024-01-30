@@ -1,3 +1,7 @@
 string, alph=input().split()
 
-print(string.find(alph))
+exists=string.find(alph)
+if exists==-1:
+    print('No')
+else:
+    print(exists)
