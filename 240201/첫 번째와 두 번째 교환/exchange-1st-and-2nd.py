@@ -1,9 +1,9 @@
 string=list(input())
-
-for elem in string:
-    if elem==string[0]:
-        elem=string[1]
-    elif elem==string[1]:
-        elem=string[0]
-
+f_string=str(string[0])
+s_string=str(string[1])
+for i in range(len(string)):
+    if string[i]==f_string:
+        string[i]=s_string
+    elif string[i]==s_string:
+        string[i]=f_string
 print(''.join(string))
