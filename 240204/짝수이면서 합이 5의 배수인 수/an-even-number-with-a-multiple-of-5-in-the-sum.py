@@ -4,10 +4,7 @@ def even_five(N):
 
 n=int(input())
 
-boolean=even_five(n)
-
-
-if boolean:
+if even_five(n):
     print('Yes')
 else:
     print('No')
