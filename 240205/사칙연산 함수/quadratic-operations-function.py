@@ -18,3 +18,5 @@ elif c=='/':
     print(a, c, b,'=', get_div(a, b))
 elif c=='*':
     print(a, c, b,'=', get_mult(a, b))
+else:
+    print('false')
