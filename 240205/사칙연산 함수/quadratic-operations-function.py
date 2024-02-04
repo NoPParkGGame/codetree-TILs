@@ -19,4 +19,4 @@ elif c=='/':
 elif c=='*':
     print(a, c, b,'=', get_mult(a, b))
 else:
-    print('false')
+    print('False')
