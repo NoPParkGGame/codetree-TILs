@@ -3,7 +3,7 @@ def get_add(a, b):
 def get_minus(a, b):
     return a - b
 def get_div(a, b):
-    return max a//b
+    return a//b
 def get_mult(a, b):
     return a*b
 
