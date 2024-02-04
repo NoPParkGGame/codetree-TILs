@@ -1,9 +1,9 @@
 def get_add(a, b):
     return a+b
 def get_minus(a, b):
-    return max(a, b)- min(a, b)
+    return a - b
 def get_div(a, b):
-    return max(a, b)//min(a, b)
+    return max a//b
 def get_mult(a, b):
     return a*b
 
