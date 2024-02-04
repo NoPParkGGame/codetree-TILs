@@ -7,6 +7,6 @@ def get_min(a, b, c):
             min_val=elem
     return min_val
 
-a, b, c= list(map(int, input().split()))
+a, b, c= tuple(map(int, input().split()))
 
 print(get_min(a, b, c))
