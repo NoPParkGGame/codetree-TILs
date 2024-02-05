@@ -1,11 +1,11 @@
 def is_leap_year(year):
-    if year%4 != 0:
+    if year%4 != 0: #만약 4의 배수가 아니라면 윤년이 아니다.
         return False
-    elif year%100 != 0:
+    if year%100 != 0: # 4의 배수는 확실. 100의 배수가 아니라면 윤년이다.
         return True
-    elif year%400==0:
+    if year%400==0: # 4의 배수 확실, 100의 배수도 확실, 그리고 400의 배수면 윤년이다.
         return True
-    return False
+    return False # 그 외의 경우는 윤년이 아니다.
 
 def get_day_of_month(year, month, day):
     if month==2:
