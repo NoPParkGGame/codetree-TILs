@@ -19,7 +19,7 @@ def get_day_of_month(year, month, day):
         return 30
     
 def is_exist_day(year, month, day):
-    if 1 <= month <= 12 and get_day_of_month(year, month, day):
+    if month <= get_day_of_month(year, month, day):
         return True
     return False
 
