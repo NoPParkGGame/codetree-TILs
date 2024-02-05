@@ -11,7 +11,7 @@ def is_MD_exist(month, day):
             else:
                 if 1 <= day <= 30:
                     return True
-        else:
+        elif 8<= month <13:
             if month%2 == 0 and 1 <= day <= 31:
                 return True
             else:
