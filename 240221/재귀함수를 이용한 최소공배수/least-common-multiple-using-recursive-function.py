@@ -11,8 +11,9 @@ def max_(a, b): #최대공약수 구하기
 def f(n): #최소 공배수 = 두 수의 곱 / 최대공약수, 즉 두 수씩 나누어서 재귀함수 호출
     if n==1: # n이 1이면 
         return (arr[0]*arr[1]) // max_(arr[0],arr[1]) # 0번째 값과 1번째 값의 최소공배수를 return
-    elif n < 1:
-        return 1
+    elif n==1 and len(arr)==1:
+        return arr[0]
+
     return f(n-1)*arr[n] // max_(f(n-1), arr[n])   
 
 print(f(n-1))
