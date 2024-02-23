@@ -4,7 +4,10 @@ arr=list(map(int, input().split()))
 sorted_arr=sorted(arr)
 
 for i in range(len(arr)):
-    if i%2==0:
+    if n==1:
+        print(arr[0])
+        break
+    elif i%2==0:
         print(sorted_arr[(i+1)//2], end=' ')
 
 
