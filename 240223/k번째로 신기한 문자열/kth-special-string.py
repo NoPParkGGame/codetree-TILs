@@ -5,10 +5,14 @@ arr=[]
 
 for _ in range(n):
     string=input()
+    
     indicator=True
-    for i in range(len(T)):
-        if T[i] !=string[i]:
-            indicator=False
+
+    if len(T)>=len(string):
+        for i in range(len(T)):
+            if T[i] !=string[i]:
+                indicator=False
+
     if indicator==True:
         arr.append(string)
 
