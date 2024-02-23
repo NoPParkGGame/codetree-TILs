@@ -5,10 +5,10 @@ arr=[]
 
 for _ in range(n):
     string=input()
-    
+
     indicator=True
 
-    if len(T)>=len(string):
+    if len(T)<=len(string):
         for i in range(len(T)):
             if T[i] !=string[i]:
                 indicator=False
