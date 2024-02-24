@@ -1,4 +1,3 @@
-import sys  # sys호출
 n=int(input())  # n의 값 입력
 
 class information:
