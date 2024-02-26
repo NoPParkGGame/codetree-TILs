@@ -7,8 +7,8 @@ class Axis:
         self.num=num
 
 given_input=[
-    tuple(map(int, input().split())) + tuple(str(i+1))
-    for i in range(n)
+    tuple(map(int, input().split())) + tuple(str(i))
+    for i in range(1, n+1)
 ]
 
 arr=[
