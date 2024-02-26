@@ -6,11 +6,12 @@ month, day= m1, d1
 elapsed_day=0
 
 while True:
+    day+=1
+    elapsed_day+=1    
+    
     if month==m2 and day==d2:
         break
-    
-    day+=1
-    elapsed_day+=1
+
 
     if day>day_of_months[month]:
         month+=1
