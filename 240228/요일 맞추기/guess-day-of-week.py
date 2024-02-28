@@ -41,7 +41,7 @@ while indicator==True:
         day=day_of_month[month]
 
 if elapsed_day>=0:
-    print(day_of_week[elapsed_day&7])
+    print(day_of_week[elapsed_day%7])
 else:
     print(reversed_day_of_week[abs(elapsed_day)%7])
 
