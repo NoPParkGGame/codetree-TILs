@@ -2,7 +2,7 @@ m1, d1, m2, d2 = tuple(map(int, input().split()))
 
 day_of_month=[0,31,28,31,30,31,30,31,31,30,31,30,31]
 
-day_of_week=['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+day_of_week=['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
 month, day =m1, d1
 
