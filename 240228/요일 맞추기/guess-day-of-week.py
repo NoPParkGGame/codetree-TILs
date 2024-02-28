@@ -17,6 +17,7 @@ while True:
     
     elif (m1==m2 and d1>d2) or m1>m2:
         indicator=True
+        break
 
     if month==m2 and day==d2:
         break
