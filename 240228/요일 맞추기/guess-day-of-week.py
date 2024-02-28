@@ -36,7 +36,7 @@ while indicator==True:
     day-=1
     elapsed_day-=1
 
-    if day==1:
+    if day==0:
         month-=1
         day=day_of_month[month]
 
