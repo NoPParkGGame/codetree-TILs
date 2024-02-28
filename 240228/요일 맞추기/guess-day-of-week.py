@@ -9,6 +9,9 @@ month, day =m1, d1
 elapsed_day=0
 
 while True:
+    if m1==m2 and d1==d2:
+        break
+        
     if month==m2 and day==d2:
         break
     
