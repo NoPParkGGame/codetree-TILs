@@ -2,7 +2,7 @@ m1, d1, m2, d2 = tuple(map(int, input().split()))
 
 day_of_month=[0,31,28,31,30,31,30,31,31,30,31,30,31]
 
-day_of_week=['Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon']
+day_of_week=['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 month, day =m1, d1
 
@@ -11,7 +11,7 @@ elapsed_day=0
 while True:
     if m1==m2 and d1==d2:
         break
-        
+
     if month==m2 and day==d2:
         break
     
