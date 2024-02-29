@@ -21,14 +21,7 @@ def total_day(m, d):
     return elapsed_day
 
 elapsed_day = total_day(m2,d2) - total_day(m1,d1) # 두 날짜 사이의 값 계산
-'''
-while  index_given_day> 0:  # A요일이 리스트 가장 앞에 오도록 리스트 변경
 
-    day_of_week=day_of_week[1:] + [day_of_week[0]]
-
-    index_given_day-=1
-    
-'''
 cnt_A=0
 for i in range(elapsed_day+1):
     if i%7==index_given_day:
