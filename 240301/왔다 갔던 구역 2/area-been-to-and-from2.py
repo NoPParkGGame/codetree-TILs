@@ -40,7 +40,7 @@ while 0 in arr: # arr에서 0을 없애 단순화 시킨다.
     arr.remove(0)
 
 cnt_line=0
-
+print(arr)
 for i in range(len(arr)-1):
     if arr[i]>=2 and arr[i+1]>=2:
         cnt_line+=1
