@@ -19,7 +19,6 @@ pre_x = x0 # 가장 첫번째는 x0부터 시작함
 
 def dir_R(input_x): # R값이 주어졌을 때 선언, input_x는 a값
     global pre_x
-    global offset
     for i in range(pre_x, pre_x + input_x):
         arr[i]+=1
     pre_x= pre_x+input_x # pre_x 값 업데이트
@@ -35,9 +34,6 @@ for a, b in direction:
         dir_R(int(a))
     else:
         dir_L(int(a))
-
-while 0 in arr: # arr에서 0을 없애 단순화 시킨다. -> 굳이 할 필요는 없다.
-    arr.remove(0)
 
 cnt_line=0
 
@@ -92,9 +88,7 @@ n * 10 +1 으로 해주면 되려나? -> 최댓값은 어차피 n * 10이기 때
 
 아마 해결이 될 듯 하다. 즉, len(arr) -> 20n+1
 
--> 위 과정이 실행된 리스트를 만드는 데에는 성공했다. -> 그럼 겹치는 구간의 길이는 어떻게 구하지??
-
-일단 arr을 단순화시키자 -> [0] 을 다 삭제하자. remove() 함수 사용.
+-> 위 과정이 실행된 리스트를 만드는 데에는 성공했다. 
 
 '구간'을 칠했으니 arr에서 2이상인 점들만 세어주면 끝
 
