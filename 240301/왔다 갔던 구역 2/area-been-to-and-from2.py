@@ -36,7 +36,7 @@ for a, b in direction:
     else:
         dir_L(int(a))
 
-while 0 in arr: # arr에서 0을 없애 단순화 시킨다.
+while 0 in arr: # arr에서 0을 없애 단순화 시킨다. -> 굳이 할 필요는 없다.
     arr.remove(0)
 
 cnt_line=0
@@ -51,15 +51,15 @@ print(cnt_line)
 알고리즘:
 0으로 이루어진 List를 만든 후 2이상인 놈들을 구함.
 
-R 일 때 -> range(pre_X, pre_x + input_X+1) 값을 +1 해줘야 함.
+R 일 때 -> range(pre_X, pre_x + input_X) 값을 +1 해줘야 함.
 
-L 일 때 -> range(pre_X - input_X, pre_X+1) 값을 +1 해줘야 함.
+L 일 때 -> range(pre_X - input_X, pre_X) 값을 +1 해줘야 함.
 여기서 pre_X 는 계속 최신화 되어야 함
 
 
 -> 각 과정을 함수로 만들어 간단화 작업이 필요.
 
-2이상인 놈들의 총 '구간' (지점X) 를 구해줘야함 즉, (x1, x2-1) return
+2이상인 놈들의 총 '구간' (지점X) 를 구해줘야함 즉, (x1, x2-1)
 
 * L일 때 pre_X - input_X <0 일 때를 대비해 Offset을 더해줘야 함.
 
@@ -95,6 +95,8 @@ n * 10 +1 으로 해주면 되려나? -> 최댓값은 어차피 n * 10이기 때
 -> 위 과정이 실행된 리스트를 만드는 데에는 성공했다. -> 그럼 겹치는 구간의 길이는 어떻게 구하지??
 
 일단 arr을 단순화시키자 -> [0] 을 다 삭제하자. remove() 함수 사용.
+
+'구간'을 칠했으니 arr에서 2이상인 점들만 세어주면 끝
 
 2 3 2 2 1 1 1 3 3 1 1 2 2 2
 
