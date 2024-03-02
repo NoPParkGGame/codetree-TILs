@@ -35,16 +35,21 @@ for x, direct in given_input:
         dir_R(x)
     else:
         dir_L(x)
+
+while 0 in arr:
+    arr.remove(0)
     
 cnt_w=0
 cnt_b=0
 cnt_g=0
 for elem in arr:
-    if len(elem)>=4:
-        cnt_g+=1
-    else:
-        if elem[-1]=='W':
-            cnt_w+=1
+    if elem!=0:
+        
+        if len(elem)>=4:
+            cnt_g+=1
         else:
-            cnt_b+=1
+            if elem[-1]=='W':
+                cnt_w+=1
+            else:
+                cnt_b+=1
 print(cnt_w, cnt_b, cnt_g)
