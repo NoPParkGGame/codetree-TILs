@@ -35,16 +35,12 @@ for x, direct in given_input:
         dir_R(x)
     else:
         dir_L(x)
-
-while 0 in arr:
-    arr.remove(0)
     
 cnt_w=0
 cnt_b=0
 cnt_g=0
 for elem in arr:
     if elem!=0:
-        
         if len(elem)>=4:
             cnt_g+=1
         else:
