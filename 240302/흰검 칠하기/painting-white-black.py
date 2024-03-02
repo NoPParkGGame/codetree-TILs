@@ -46,6 +46,6 @@ for elem in arr:
         elif len(elem)<4:
             if elem[-1]=='W':
                 cnt_w+=1
-            else:
+            elif elem[-1]=='B':
                 cnt_b+=1
 print(cnt_w, cnt_b, cnt_g)
