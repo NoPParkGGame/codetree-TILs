@@ -43,7 +43,7 @@ for elem in arr:
     if elem!=0:
         if len(elem)>=4:
             cnt_g+=1
-        else:
+        elif len(elem)<4:
             if elem[-1]=='W':
                 cnt_w+=1
             else:
