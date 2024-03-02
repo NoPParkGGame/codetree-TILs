@@ -35,9 +35,6 @@ for x, direct in given_input:
         dir_R(x)
     else:
         dir_L(x)
-
-while 0 in arr:
-    arr.remove(0)
     
 cnt_w=0
 cnt_b=0
