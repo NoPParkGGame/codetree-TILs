@@ -17,17 +17,17 @@ def dir_R(input_x):
             arr[i].append('B')
         else:
             arr[i].append('B')
-    pre_x = pre_x + input_x
+    pre_x = pre_x + input_x - 1
 
 def dir_L(input_x):
     global pre_x
-    for i in range(pre_x - input_x, pre_x):
+    for i in range(pre_x - input_x+1, pre_x+1):
         if arr[i]==0:
             arr[i]=[]
             arr[i].append('W')
         else:
             arr[i].append('W')
-    pre_x= pre_x - input_x
+    pre_x= pre_x - input_x+1
 
 for x, direct in given_input:
     x= int(x)
