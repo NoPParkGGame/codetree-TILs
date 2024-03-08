@@ -21,4 +21,16 @@ while 0 in arr_x:
 while 0 in arr_y:
     arr_y.remove(0)
 
-print(len(arr_x)*len(arr_y)-(arr_x.count(2)*arr_y.count(2)))
+whole_w=len(arr_x)*len(arr_y)
+
+cnt_x=0
+cnt_y=0
+for elem in arr_x:
+    if elem!=1:
+        cnt_x+=1
+for elem in arr_y:
+    if elem!=1:
+        cnt_y+=1
+overlap_w=cnt_x*cnt_y
+
+print(whole_w-overlap_w)
