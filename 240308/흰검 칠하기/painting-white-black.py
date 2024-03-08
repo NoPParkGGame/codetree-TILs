@@ -39,11 +39,30 @@ for x, direct in given_input:
 cnt_w=0
 cnt_b=0
 cnt_g=0
+
+def w_or_b(elem):
+    cnt_elem_w=0
+    cnt_elem_b=0
+    for elem2 in elem:
+        if elem2=='W':
+            cnt_elem_w+=1
+        elif elem2=='B':
+            cnt_elem_b+=1
+    if cnt_elem_b>=2 and cnt_elem_w>=2:
+        return 'gray'
+    return 
+
 for elem in arr:
     if elem!=0:
         if len(elem)>=4:
-            cnt_g+=1
-        elif len(elem)<4:
+            if w_or_b(elem)=='gray':
+                cnt_g+=1
+            else:
+                if elem[-1]=='W':
+                    cnt_w+=1
+                elif elem[-1]=='B':
+                    cnt_b+=1       
+        if len(elem)<4:
             if elem[-1]=='W':
                 cnt_w+=1
             elif elem[-1]=='B':
