@@ -30,7 +30,7 @@ for i in range(max_axis):
             arr_y.append(j)
             empty=False
 
-if empty==True:
+if empty:
     print(0)
 
 else:
