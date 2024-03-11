@@ -12,8 +12,8 @@ arr_axis=[
 ]
 num_square=0
 
-for square in given_arr:
-    num_square+=1; x1,y1,x2,y2=square
+for x1,y1,x2,y2 in given_arr:
+    num_square+=1; 
     x1+=offset; y1+=offset;
     x2+=offset; y2+=offset;  
     for i in range(x1,x2):
