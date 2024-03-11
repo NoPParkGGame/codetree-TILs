@@ -21,13 +21,19 @@ for idx, (x1,y1,x2,y2) in enumerate(given_arr, start=1):
 arr_x=[]
 arr_y=[]
 
+empty=True
+
 for i in range(max_axis):
     for j in range(max_axis):
         if arr_axis[i][j]==1:
             arr_x.append(i)
             arr_y.append(j)
+            empty=False
 
-width=max(arr_x) - min(arr_x) + 1
-height=max(arr_y) - min(arr_y) + 1
+if empty==True:
+    print(0)
 
-print(width * height)
+else:
+    width=max(arr_x) - min(arr_x) + 1
+    height=max(arr_y) - min(arr_y) + 1
+    print(width * height)
