@@ -8,8 +8,8 @@ move_B=[
     input().split()
     for _ in range(m)
 ]   #값 입력
-arr_A=[0]*1001
-arr_B=[0]*1001
+arr_A=[0]*(1000*1000)
+arr_B=[0]*(1000*1000)
 
 
 def start(move_who, arr_who):   #이동경과를 기록하는 함수 작성
