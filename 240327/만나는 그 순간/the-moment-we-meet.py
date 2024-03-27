@@ -29,9 +29,10 @@ start(move_B, arr_B)    #각 함수 적용
 
 meet=False
 for i in range(1, len(arr_A)):
-    if arr_A[i]==arr_B[i]:
+    if arr_A[i]==arr_B[i] and (arr_A[i+1]!=0 and arr_B[i+1]!=0):
         print(i)
         meet=True
         break
+
 if meet==False:
     print(-1)
