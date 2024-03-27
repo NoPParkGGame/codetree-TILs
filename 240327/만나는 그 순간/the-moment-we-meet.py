@@ -30,7 +30,7 @@ start(move_B, arr_B)    #각 함수 적용
 
 meet=False
 for i in range(1, len(arr_A)):
-    if arr_A[i]==arr_B[i] and (abs(arr_A[i-1])-abs(arr_A[i]))<2:
+    if arr_A[i]==arr_B[i] and (abs(arr_A[i-1])-abs(arr_A[i]))<2 and (abs(arr_A[i-1])-abs(arr_A[i]))!=0 :
         print(i)
         meet=True
         break
