@@ -27,8 +27,11 @@ def start(move_who, arr_who):   #이동경과를 기록하는 함수 작성
 start(move_A, arr_A)
 start(move_B, arr_B)    #각 함수 적용
 
-
+meet=False
 for i in range(1, len(arr_A)):
     if arr_A[i]==arr_B[i]:
         print(i)
+        meet=True
         break
+if meet==False:
+    print(-1)
