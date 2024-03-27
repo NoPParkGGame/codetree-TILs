@@ -11,6 +11,7 @@ move_B=[
 arr_A=[0]*1001
 arr_B=[0]*1001
 
+
 def start(move_who, arr_who):   #이동경과를 기록하는 함수 작성
     pre_x=1
     for drt, num in move_who:
@@ -29,7 +30,7 @@ start(move_B, arr_B)    #각 함수 적용
 
 meet=False
 for i in range(1, len(arr_A)):
-    if arr_A[i]==arr_B[i] and (arr_A[i+1]!=0 and arr_B[i+1]!=0):
+    if arr_A[i]==arr_B[i] and (abs(arr_A[i-1])-abs(arr_A[i]))<2:
         print(i)
         meet=True
         break
