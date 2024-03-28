@@ -4,18 +4,11 @@ students=[0]+[
     k
     for i in range(n)
 ]
-
-minus=[
-    int(input())
-    for _ in range(m)
-]
-
-for num in minus:
-    students[num]-=1
 ans=-1
-
-for i in range(1, n):
-    if students[i]==0:
-        ans=i
+for _ in range(m):
+    minus=int(input())
+    students[minus]-=1
+    if students[minus]==0:
+        ans=minus
         break
 print(ans)
