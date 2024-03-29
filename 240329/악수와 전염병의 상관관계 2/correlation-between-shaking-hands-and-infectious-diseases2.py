@@ -10,7 +10,7 @@ arr.sort()  # 시간 순으로 정렬
 arr_infected=[first_infected] #감염자들의 리스트를 정리
 
 for time, x_dev, y_dev in arr: #몇 초, 누가, 누구에게 unpacking
-    if num_infect==0:  # 감염가능횟수가 0이 되면 break
+    if num_infect<=0:  # 감염가능횟수가 0이 되면 break
         break
     if x_dev in arr_infected:   #만약 x가 감염자 리스트에 있다면
         arr_infected.append(y_dev)  # y 또한 감염자 리스트에 추가
