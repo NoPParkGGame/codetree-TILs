@@ -14,23 +14,23 @@ for time, x_dev, y_dev in arr: #몇 초, 누가, 누구에게 unpacking
 
     if x_dev in arr_infected and arr_num_infect[x_dev]>0 :   #만약 x가 감염자 리스트에 있고 감염횟수가 0이 아니라면        
         arr_infected.append(y_dev)  # y 또한 감염자 리스트에 추가
-        arr_num_infect[x_dev]-=1
+        arr_num_infect[x_dev]-=1    # x의 감염횟수 감소
         
     elif y_dev in arr_infected and arr_num_infect[y_dev]>0: # 또는 y가 감염자 리스트에 있고 감염횟수가 0이 아니라면
-        arr_infected.append(y_dev)  # x 또한 감염자 리스트에 추가
-        arr_num_infect[y_dev]-=1
+        arr_infected.append(x_dev)  # x 또한 감염자 리스트에 추가
+        arr_num_infect[y_dev]-=1    # y의 감염횟수 감소
     
     elif (x_dev in arr_infected and arr_num_infect[x_dev]>0) and (y_dev in arr_infected and arr_num_infect[y_dev]>0):
         arr_num_infect[x_dev]-=1
-        arr_num_infect[y_dev]-=1
-        
+        arr_num_infect[y_dev]-=1    # 둘 다 감염자라면 감염가능횟수만 -1
+
 arr_dev=[
     i
     for i in range(1, num_dev+1)
 ]
 
 for elem in arr_dev:
-    if elem in arr_infected:
+    if elem in set(arr_infected):
         print(1,end='')
     else:
         print(0,end='')
