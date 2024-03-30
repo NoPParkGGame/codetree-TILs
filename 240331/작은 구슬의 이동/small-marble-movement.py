@@ -13,7 +13,7 @@ mapper={
 }   # 각 방향들을 숫자로 전환
 
 def in_range(x, y):
-    return 0<x and x<num and 0<y and y<num    # 해당 격자 내에 있는지 확인
+    return 0<x and x<=num and 0<y and y<=num    # 해당 격자 내에 있는지 확인
 
 cur_time=0
 dir_num=mapper[direction]
