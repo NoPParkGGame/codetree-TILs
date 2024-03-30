@@ -23,7 +23,8 @@ while cur_time<time:   #현재 시간이 주어진 시간이 될때 까지 계�
     if not in_range(nx, ny):    # 격자 내에 없다면
         dir_num= 3 - dir_num    # 방향 전환
         cur_time+=1 # 방향 전환 시 1초 소요
-    
+    if cur_time>=time:
+        break
     x, y = x + dx[dir_num], y+dy[dir_num]
     cur_time+=1 # 이동 후 1초 소요
 
