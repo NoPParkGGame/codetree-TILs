@@ -12,18 +12,22 @@ mirror=[
 # 레이저 쏘는 위치 입력
 laser=int(input())
 # 같은 반사각을 지닌 시작 숫자들 끼리 리스트 생성
-length=[]  # 수직
+length=[]  # 수직 리스트 생성
 for i in range(1, n+1):
     length.append(i)
 for i in range(3*n-(n-1), 3*n +1):
     length.append(i)
 
-width=[]    # 수평
+width=[]    # 수평 리스트 생성
 for i in range(1, 4*n +1):
     if i not in length:
         width.append(i)
+# 현재 바라보는 방향이 수직인지, 수평인지 판단하는 변수 생성
+is_length=True # 일단은 수직으로 가정하고 시작
+
 # 숫자를 arr 내의 좌표로 치환해주는 함수 생성
 def make_axis(laser_start):
+    global is_length    # 판단 변수 global 화
     if laser_start in length:   # 수직 리스트에 들어간다면,
         if length.index(laser_start)>=len(length)//2:   # 만약 시작점이 아래에서 시작한다면,
             laser_start= (1+3*n)- laser_start   # 9는 1로, 8은 2로, 7은 3으로 바꿔주는 수식
@@ -34,9 +38,12 @@ def make_axis(laser_start):
             return x, y
     if laser_start in width:    # 수평 리스트에 들어간다면
         if width.index(laser_start)>=len(width)//2: #만약 시작점이 왼쪽에서 시작한다면,
-            laser_start= (n*5+1) - laser_start
-
-
+            laser_start= (n*5+1) - laser_start  # 12는 4로, 11은 5로, 10은 6으로 바꿔주는 수식
+            (x, y)= (laser_start-(n+1), 0)
+            return x, y
+        else:
+            (x, y)= (laser_start-(n+1), n-1)
+            return x, y
 
 
 print(make_axis(laser))
