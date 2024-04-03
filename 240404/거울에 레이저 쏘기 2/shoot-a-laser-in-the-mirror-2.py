@@ -1,9 +1,5 @@
 n= int(input())
 # 빈 리스트 생성
-arr=[
-    [0] *n
-    for _ in range(n)
-]
 # 거울 배열 정보 입력
 mirror=[
     list(input())
@@ -59,18 +55,17 @@ ans=1
 # 레이저가 좌표 밖으로 나갈 때 까지 무한 반복
 while True:
     if dir_num==1 or dir_num==3:    # 뱡향이 수직일 때, 
-        if arr[x][y]=='\\':  # \ 모양의 거울과 만난다면, 
+        if mirror[x][y]=='\\':  # \ 모양의 거울과 만난다면, 
             dir_num= (dir_num+3)%4  # 방향은 왼쪽으로 꺾임
         else:   # / 모양의 거울과 만난다면
             dir_num= (dir_num+1)%4  #방향은 오른쪽으로 꺾임
 
-    else:   # 방향이 수평일 때,
-        if arr[x][y]=='\\': # \모양의 거울과 만난다면
+    if dir_num==0 or dir_num==2:   # 방향이 수평일 때,
+        if mirror[x][y]=='\\': # \모양의 거울과 만난다면
             dir_num= (dir_num+1)%4  #방향은 오른쪽으로 꺾임
         else:   # / 모양의 거울과 만난다면
             dir_num= (dir_num+3)%4  # 방향은 왼쪽으로 꺾임
     nx, ny= x+ dxs[dir_num], y+ dys[dir_num]    # nx, ny 먼저 가상 이동
-
     if not in_range(nx, ny):    # 만약 좌표 밖으로 벗어난다면
         break       #반복문 종료
 
