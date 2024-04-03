@@ -60,7 +60,7 @@ while True:
         else:   # / 모양의 거울과 만난다면
             dir_num= (dir_num+1)%4  #방향은 오른쪽으로 꺾임
 
-    if dir_num==0 or dir_num==2:   # 방향이 수평일 때,
+    elif dir_num==0 or dir_num==2:   # 방향이 수평일 때,
         if mirror[x][y]=='\\': # \모양의 거울과 만난다면
             dir_num= (dir_num+1)%4  #방향은 오른쪽으로 꺾임
         else:   # / 모양의 거울과 만난다면
@@ -68,7 +68,6 @@ while True:
     nx, ny= x+ dxs[dir_num], y+ dys[dir_num]    # nx, ny 먼저 가상 이동
     if not in_range(nx, ny):    # 만약 좌표 밖으로 벗어난다면
         break       #반복문 종료
-
     x, y= x+ dxs[dir_num], y+ dys[dir_num]
     ans+=1
 
