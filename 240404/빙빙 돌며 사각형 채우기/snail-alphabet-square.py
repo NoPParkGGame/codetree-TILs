@@ -11,7 +11,7 @@ def in_range(x,y):
     return 0<=x and x<n and 0<=y and y<m
 alph=65
 arr[x][y]=chr(alph)
-cnt=0
+cnt=1
 while cnt<m*n:
     nx, ny= x+dxs[dir_num], y+ dys[dir_num]
 
@@ -19,12 +19,12 @@ while cnt<m*n:
         dir_num= (dir_num+1)%4
     
     x, y= x+dxs[dir_num], y+ dys[dir_num]
+
     if alph>90:
         alph=64
     alph+=1
+    arr[x][y]=chr(alph)
     cnt+=1
-    if arr[x][y]==0:
-        arr[x][y]=chr(alph)
 
 for row in arr:
     for elem in row:
