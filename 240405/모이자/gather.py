@@ -13,7 +13,6 @@ def dist_val(i, j):
 
 for i in range(n):
     sum_dist=0  
-    arrive=arr[i]   # 차례로 집결지를 바꿔보기
 
     for j in range(n):
         sum_dist= sum_dist+ (dist_val(i, j) * arr[j])
