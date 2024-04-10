@@ -10,13 +10,9 @@ def is_diff(moved_axis):
     return cur_axis!=moved_axis
 
 ans=0
-cnt=0
-
-
 
 for i in range(1, r):
     for j in range(1, c):   # 1,1 부터 한 칸씩 완전탐색 진행
-        cur_axis= arr[0][0]
         second_detect=False # 2차 탐색은 기본 False
         if is_diff(arr[i][j]):  # 색이 다르다면 
             second_detect=True  # 2차 탐색 허가
