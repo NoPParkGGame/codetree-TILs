@@ -26,8 +26,7 @@ for i in range(1, r):
             for k in range(i+1, r-1):
                 for l in range(j+1, c-1):
                     cur_axis=arr[k][l]
-                    if is_diff(arr[r-1][c-1]) and cur_axis!=arr[i][j]:
+                    if is_diff(arr[r-1][c-1]) and is_diff(arr[i][j]):
                         ans+=1
-            break
 
 print(ans)
