@@ -9,7 +9,7 @@ def print_now():
 
 def make_twin(curr_num):
     
-    if curr_num==n+n:
+    if curr_num==n+2:
         print_now()
         return
 
