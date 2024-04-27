@@ -13,18 +13,9 @@ for i in range(n):
         arr[i]= '0' + arr[i]
 
 def is_carry(a, b, c):
-    if int(a[0]) + int(b[0]) + int(c[0])>=10:
-        return True
-
-    if int(a[1]) + int(b[1]) + int(c[1])>=10:
-        return True
-
-    if int(a[2]) + int(b[2]) + int(c[2])>=10:
-        return True
-
-    if int(a[3]) + int(b[3]) + int(c[3])>=10:
-        return True
-
+    for i in range(4):
+        if int(a[i]) + int(b[i]) + int(c[i])>=10:
+            return True
     return False
 
 def sum_all(a, b, c):
