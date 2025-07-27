@@ -1,3 +1,5 @@
-a=2
+a=int(input())
+
 a+=2
+
 print(a)
