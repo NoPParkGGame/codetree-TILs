@@ -6,4 +6,6 @@ a=c
 a=a+c
 b=b-c
 
-print(a"\n"b"\n"c)
+print(a)
+print(b)
+print(c)
